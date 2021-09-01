@@ -1,0 +1,57 @@
+data_2Z_1A_W7
+_audit_creation_method                 'DeviceStudio'
+_symmetry_space_group_name_H-M         'PM'
+_symmetry_Int_Tables_number            6
+_symmetry_cell_setting                 Orthorhombic
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,y,z
+_cell_length_a                         10
+_cell_length_b                         30
+_cell_length_c                         8.87
+_cell_angle_alpha                      90
+_cell_angle_beta                       90
+_cell_angle_gamma                      90
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+C	C	0.5	0.365437	0.48075
+C	C	0.5	0.404816	0.942184
+C	C	0.5	0.398258	0.365396
+C	C	0.5	0.437637	0.82683
+C	C	0.5	0.444205	0.403855
+C	C	0.5	0.483584	0.865289
+C	C	0.5	0.378563	0.634561
+C	C	0.5	0.385132	0.211585
+C	C	0.5	0.424511	0.673019
+C	C	0.5	0.477026	0.288501
+C	C	0.5	0.516405	0.749935
+C	C	0.5	0.522974	0.32696
+C	C	0.5	0.562352	0.788394
+C	C	0.5	0.417953	0.096232
+C	C	0.5	0.457332	0.557666
+C	C	0.5	0.4639	0.13469
+C	C	0.5	0.503279	0.596124
+C	C	0.5	0.555795	0.211606
+C	C	0.5	0.595173	0.67304
+C	C	0.5	0.601742	0.250065
+C	C	0.5	0.496721	0.019337
+C	C	0.5	0.5361	0.480771
+C	C	0.5	0.575479	0.942205
+C	C	0.5	0.542668	0.0577951
+C	C	0.5	0.582047	0.519229
+C	C	0.5	0.621426	0.980663
+C	C	0.5	0.634563	0.134711
+C	C	0.5	0.614868	0.403876
+H	H	0.5	0.330168	0.451229
+H	H	0.5	0.369546	0.912663
+H	H	0.5	0.35337	0.723107
+H	H	0.5	0.349863	0.182064
+H	H	0.5	0.630443	0.702561
+H	H	0.5	0.646619	0.892117
+H	H	0.5	0.669832	0.164232
+H	H	0.5	0.650137	0.433397

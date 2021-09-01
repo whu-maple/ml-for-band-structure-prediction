@@ -1,0 +1,43 @@
+{
+    "random_seed": 2,
+    "batch_size": 18,
+    "num_epoch": 3000,
+    "lr_radio_init": 0.01,
+    "num_lr_decay": 800,
+    "lr_radio_decay": 0.2,
+    "trainset_rawdata_path": "./dataset/trainingset/raw/",
+    "trainset_dgldata_path": "./dataset/trainingset/dgl/",
+    "gnn_dim_list": [
+        30,
+        27,
+        24,
+        20
+    ],
+    "gnn_head_list": [
+        5,
+        3,
+        1
+    ],
+    "onsite_dim_list": [
+        20,
+        15,
+        10,
+        5,
+        1
+    ],
+    "hopping_dim_list1": [
+        20,
+        40,
+        35,
+        40
+    ],
+    "hopping_dim_list2": [
+        80,
+        20,
+        15,
+        7,
+        1
+    ],
+    "expander_bessel_dim": 40,
+    "expander_bessel_cutoff": 20
+}
