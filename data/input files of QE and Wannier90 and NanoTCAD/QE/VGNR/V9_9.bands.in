@@ -1,0 +1,6 @@
+ &bands
+       prefix='V9_9',
+       outdir='/home/zfwang/scratch/GNRDATASET/AGNR/V9_9',
+       filband='bands_V9_9.dat',
+       lsym=.true.,
+ /

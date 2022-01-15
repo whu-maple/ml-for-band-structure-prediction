@@ -1,9 +1,10 @@
 import numpy as np
 import torch
-from file_reader import read_cif
+from core.file_reader import read_cif
 import matplotlib.pyplot as plt
 torch.set_default_tensor_type(torch.DoubleTensor)
 from math import ceil
+from core.model import WHOLEMODEL
 
 def predict(model, target_cif):
     
@@ -33,42 +34,47 @@ def get_bands(h0,h1):
     Energy_hr=Energy_hr.reshape(H_size,-1,order='F')
     return Energy_hr.T
 
-def compare_bands(pbands,rbands):
+def plot_bands(pbands):
     
     plt.figure()
     x = np.linspace(0,25,26)
     
-    for i in range(rbands.shape[1]):
-        plt.plot(x, rbands[:,i], color="b", label = "ab-initio bands")
-        
     for i in range(pbands.shape[1]):
-        plt.plot(x, pbands[:,i], color="r", ls="--", label = "predicted bands")
+        plt.plot(x, pbands[:,i], color="r", ls="-", label = "predicted bands")
         
     plt.xlim(0,25)
     plt.ylim(-4,4)
     plt.show()
     plt.xticks([0,25],['G','Z']) 
      
-def main():
+def main(pkl_file, cif_file):
     
     """
     Here we show the example of predicting the band structure for 26-atom-wide armchair
     graphene nanoribbon with H saturated edges. Just to change 'predict_structure_cif_path'
     and 'references' to see the predictions for other systems and their comparisons to ab initio ones
     """
-
+    
+    # initial the model
+    model = WHOLEMODEL(
+                            gnn_dim_list = [30, 27, 24, 20],
+                            gnn_head_list = [5, 3, 1],
+                            onsite_dim_list = [20, 15, 10, 5, 1],
+                            hopping_dim_list1 = [20, 40, 35, 40],
+                            hopping_dim_list2 = [80, 20, 15, 7, 1],
+                            expander_bessel_dim = 40,
+                            expander_bessel_cutoff = 20,
+                           )
+    
     # lode the trained network parameters
-    model = torch.load('./trained_model.pkl')
-
-    # choose the cif file of the desired system from the test set
-    predict_structure_cif_path = './dataset/testset/raw/AGNR_H_26/AGNR_H_26.cif'
+    checkpoint = torch.load(pkl_file, map_location=torch.device('cpu'))
+    model.load_state_dict(checkpoint['model_state_dict'])
 
     # the intermediate Hamiltonian prediction
-    H0, H1 = predict(model, predict_structure_cif_path)
+    H0, H1 = predict(model, cif_file)
 
-    # get the predicted band structure and compare it with the ab initio references
-    references = "./ab initio band structure/1 H-AGNR/bands_AGNR_H_26.npy"
-    compare_bands(get_bands(H0, H1), np.load(references))
+    # predict and plot band structure
+    plot_bands(get_bands(H0,H1))
     
 if __name__ == '__main__':
-    main()
+    main(pkl_file = './results/10-fold cross-validation/Fold6.pkl',  cif_file = '../data/data set/10-fold cross-validation/Fold6/raw/test/HJ_2W7_2W9/7-2-9-2-HJ.cif')

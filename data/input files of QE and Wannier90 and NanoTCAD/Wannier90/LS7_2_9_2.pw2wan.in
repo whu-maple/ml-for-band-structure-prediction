@@ -1,0 +1,9 @@
+&inputpp 
+  outdir='/home/zfwang/scratch/GNRDATASET/AGNR/LS7_2_9_2'
+  prefix='LS7_2_9_2'
+  seedname = 'LS7_2_9_2'
+  write_mmn = true
+  write_amn = true
+  write_unk = false
+  wan_mode = 'standalone'
+/

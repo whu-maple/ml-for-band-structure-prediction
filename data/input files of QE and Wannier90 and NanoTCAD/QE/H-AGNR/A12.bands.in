@@ -1,0 +1,6 @@
+ &bands
+       prefix='A12',
+       outdir='/home/zfwang/scratch/GNRDATASET/AGNR/A12',
+       filband='bands_A12.dat',
+       lsym=.true.,
+ /

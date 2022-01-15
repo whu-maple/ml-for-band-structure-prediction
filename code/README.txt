@@ -1,10 +1,11 @@
-﻿# Trained GNN framework
+﻿# Code implementation
 
-Considering that our manuscript has not been published yet, now only trained model is provided. However, you can still see "model.py" and hyper "parameter and network parameter settings .json" to know the whole network architecture and hyper parameter setting for training.
+The 'core' fold consists of the code implementation of the ML framework presented in the manuscript.
 
-Upon reasonable request, you may obtain the codes for training from the corresponding author changsheng@whu.edu.cn
+The 'script_*.py' files provide the scripts for training the ML framework, and their hyper-parameter settings are stored in 'script_*_config.json'.
 
-To evaluate the trained framework, You may run "predict.py" to see the predicted band structures with comparison to ab initio ones. Change the'predict_structure_cif_path' and 'references' for predicting for other graphene nanoribbon systems other than the given example. 
+The 'results' fold collects the final parameters of the trained ML models.
 
+The 'predict.py' file uses a trained ML framework for predicting the band structures of GNRs.
 
 

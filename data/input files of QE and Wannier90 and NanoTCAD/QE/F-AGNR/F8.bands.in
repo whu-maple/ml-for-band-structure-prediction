@@ -1,0 +1,6 @@
+ &bands
+       prefix='F8',
+       outdir='/home/zfwang/scratch/GNRDATASET/AGNR/F8',
+       filband='bands_F8.dat',
+       lsym=.true.,
+ /

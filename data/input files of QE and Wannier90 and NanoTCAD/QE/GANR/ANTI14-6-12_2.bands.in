@@ -1,0 +1,6 @@
+ &bands
+       prefix='ANTI14-6-12_2',
+       outdir='/home/zfwang/scratch/GNRDATASET/AGNR/ANTI14-6-12_2',
+       filband='bands_ANTI14-6-12_2.dat',
+       lsym=.true.,
+ /

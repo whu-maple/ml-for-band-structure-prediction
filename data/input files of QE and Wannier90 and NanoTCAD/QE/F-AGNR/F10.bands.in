@@ -1,0 +1,6 @@
+ &bands
+       prefix='F10',
+       outdir='/home/zfwang/scratch/GNRDATASET/AGNR/F10',
+       filband='bands_F10.dat',
+       lsym=.true.,
+ /

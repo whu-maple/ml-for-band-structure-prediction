@@ -1,0 +1,6 @@
+ &bands
+       prefix='C_3Z_2A_W7',
+       outdir='/home/zfwang/scratch/GNRDATASET/AGNR/C_3Z_2A_W7',
+       filband='bands_C_3Z_2A_W7.dat',
+       lsym=.true.,
+ /

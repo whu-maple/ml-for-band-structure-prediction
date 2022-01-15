@@ -1,0 +1,6 @@
+ &bands
+       prefix='AGNR_OH_17',
+       outdir='/home/zfwang/scratch/GNRDATASET/AGNR/AGNR_OH_17',
+       filband='bands_AGNR_OH_17.dat',
+       lsym=.true.,
+ /

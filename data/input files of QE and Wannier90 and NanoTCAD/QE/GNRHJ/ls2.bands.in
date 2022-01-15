@@ -1,0 +1,6 @@
+ &bands
+       prefix='ls2',
+       outdir='/home/zfwang/scratch/GNRDATASET/AGNR/ls2',
+       filband='bands_ls2.dat',
+       lsym=.true.,
+ /

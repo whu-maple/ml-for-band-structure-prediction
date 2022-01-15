@@ -1,0 +1,6 @@
+ &bands
+       prefix='AGNR_10_Defect_G',
+       outdir='/home/zfwang/scratch/GNRDATASET/AGNR/AGNR_10_Defect_G',
+       filband='bands_AGNR_10_Defect_G.dat',
+       lsym=.true.,
+ /
