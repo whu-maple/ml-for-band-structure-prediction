@@ -1,0 +1,21 @@
+Epoch 00100 | TrainSet_Loss 0.003045
+Epoch 00200 | TrainSet_Loss 0.001716
+Epoch 00300 | TrainSet_Loss 0.003405
+Epoch 00400 | TrainSet_Loss 0.004337
+Epoch 00500 | TrainSet_Loss 0.003763
+Epoch 00600 | TrainSet_Loss 0.003649
+Epoch 00700 | TrainSet_Loss 0.003290
+Epoch 00800 | TrainSet_Loss 0.003200
+Epoch 00900 | TrainSet_Loss 0.003110
+Epoch 01000 | TrainSet_Loss 0.003014
+Epoch 01100 | TrainSet_Loss 0.002962
+Epoch 01200 | TrainSet_Loss 0.002919
+Epoch 01300 | TrainSet_Loss 0.002876
+Epoch 01400 | TrainSet_Loss 0.002736
+Epoch 01500 | TrainSet_Loss 0.002719
+Epoch 01600 | TrainSet_Loss 0.002694
+Epoch 01700 | TrainSet_Loss 0.002670
+Epoch 01800 | TrainSet_Loss 0.002652
+Epoch 01900 | TrainSet_Loss 0.002635
+Epoch 02000 | TrainSet_Loss 0.002613
+Time cost 10660.97
