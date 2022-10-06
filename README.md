@@ -1,8 +1,8 @@
 ﻿# Graph representation based machine learning framework for predicting electronic band structures of quantum-confined nanostructures
 
-This repo shows the PyTorch implementation of “Graph representation based machine learning framework for predicting electronic band structures of quantum-confined nanostructures”. 
+This repo shows the PyTorch implementation of the paper “Graph representation based machine learning framework for predicting electronic band structures of quantum-confined nanostructures”. 
 
-All the related files that are necessary to reproduce the results in the manuscript are given. The manuscript doi will be linked here after publication.
+All the related files that are necessary to reproduce the results in the manuscript are given. The manuscript DOI is: [10.1007/s40843-022-2103-9](https://link.springer.com/article/10.1007/s40843-022-2103-9)
 
 The code directory contains the code implementation of our ML framewrok, and the data directory contains all the related data files.
 
